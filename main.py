@@ -27,5 +27,8 @@ def animals(pet_type):
         html += '<li>' + pets[p][a]['name'] +'</li>'
         #html += ' ' + str(pets) + ' '
     html += "</ul>"
-  return html
+  html += "<a href ='/'> Back to the begin</a>"
+  return html 
  
+if __name__ == '__main__':
+  app.run(host='0.0.0.0', port=8080) # This line is required to run Flask on repl.it
